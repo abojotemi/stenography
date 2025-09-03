@@ -23,7 +23,7 @@ with tab1:
             button = st.button("encode")
             if button:
                 res = encode(img1, img2, (width, height))
-                st.image(res, "Resultant Image", width=width)
+                st.image(res, "Resultant Image")
                 enc_img = Image.fromarray(res)
                 buff = BytesIO()
                 enc_img.save(buff, format='PNG')
